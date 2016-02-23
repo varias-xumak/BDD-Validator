@@ -14,6 +14,8 @@ function expectedToIncludeErrorWhenInvalid(number, error) {
 describe('A validator', function() {
 
   var validator;
+
+  // beforeEach executes on each test (it), but before executes once on the complete set of tests.
   beforeEach(function () {
     validator = validatorWith([
       nonPositiveValidationRule,
